@@ -6,41 +6,55 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #0f0f0f;
+            background-color: #111;
             color: white;
-            text-align: center;
         }
 
         header {
-            background: #1f1f1f;
+            background: #1c1c1c;
             padding: 20px;
+            text-align: center;
             font-size: 28px;
             font-weight: bold;
         }
 
-        .container {
-            padding: 40px 20px;
+        .intro {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
 
         .card {
-            background: #1c1c1c;
+            background: #1f1f1f;
             padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 500px;
+            width: 220px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+            text-align: center;
+            transition: 0.3s;
         }
 
-        h2 {
-            margin-top: 0;
+        .card:hover {
+            background: #292929;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
         }
 
         footer {
-            margin-top: 40px;
+            text-align: center;
             padding: 20px;
-            background: #1f1f1f;
-            font-size: 14px;
+            background: #1c1c1c;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -50,24 +64,31 @@
     🎌 AnimeVerdict
 </header>
 
-<div class="container">
-    <h1>Honest Anime Reviews & Ratings</h1>
-    <p>Deep reviews, real ratings, no bias.</p>
+<div class="intro">
+    <h1>Discover Anime Information & Honest Verdicts</h1>
+    <p>Your go-to place for anime details, ratings, and quick overviews.</p>
+</div>
 
+<div class="anime-list">
     <div class="card">
-        <h2>Demon Slayer Review</h2>
-        <p>Story: 8/10</p>
-        <p>Animation: 10/10</p>
-        <p>Overall Rating: ⭐ 8.8/10</p>
+        <h3><a href="demonslayer.html">Demon Slayer</a></h3>
+        <p>Action | Fantasy</p>
     </div>
 
     <div class="card">
-        <h2>Attack on Titan Review</h2>
-        <p>Story: 9.5/10<p>
-        <p>OverAll Rating: 9.3/10</p>
+        <h3><a href="aot.html">Attack on Titan</a></h3>
+        <p>Dark Fantasy | Drama</p>
     </div>
+
+    <div class="card">
+        <h3><a href="jujutsu.html">Jujutsu Kaisen</a></h3>
+        <p>Supernatural | Action</p>
+    </div>
+</div>
+
 <footer>
-  © 2026 AnimeVerdict | Built by Parth
+    © 2026 AnimeVerdict | Built by Parth
 </footer>
+
 </body>
 </html>
